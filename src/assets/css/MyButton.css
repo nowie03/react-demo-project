@@ -1,0 +1,52 @@
+.custom-btn {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    color: antiquewhite;
+    transition-duration: 0.4s;
+    margin: 20px;
+  }
+  .custom-btn:hover {
+    border-color: #646cff;
+  }
+
+  .custom-btn:focus,
+  .custom-btn:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+
+
+  .custom-btn:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 40px white;
+  }
+
+  .custom-btn:active:after {
+    box-shadow: 0 0 0 0 white;
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top:0;
+    opacity: 1;
+    transition: 0s;
+  }
+  
+  .custom-btn:active {
+    top: 1px;
+  }
+ 
